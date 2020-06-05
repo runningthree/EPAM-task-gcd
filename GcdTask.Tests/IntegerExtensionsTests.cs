@@ -30,9 +30,6 @@ namespace GcdTask.Tests
         [TestCase(-1590771464, 0, ExpectedResult = 1590771464)]
         public int FinGcd_WithOneZeroNumber(int a, int b) => FindGcd(a, b);
 
-        [TestCase(int.MaxValue, int.MinValue, ExpectedResult = 1)]
-        public int FinGcd_WithMaxAndMinIntegerNumbers(int a, int b) => FindGcd(a, b);
-
         [Test]
         public void FinGcd_WithTwoZeroNumbers_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => FindGcd(0, 0),
