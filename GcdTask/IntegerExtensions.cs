@@ -7,7 +7,7 @@ namespace GcdTask
         public static int FindGcd(int a, int b)
         {
             /// <summary>
-            /// Calculates GCD of two integers from [-2147483647;2147483647]  by the Euclidean algorithm.
+            /// Calculates GCD of two integers from [-int.MaxValue;int.MaxValue]  by the Euclidean algorithm.
             /// </summary>
             /// <param name="a">First integer.</param>
             /// <param name="b">Second integer.</param>
