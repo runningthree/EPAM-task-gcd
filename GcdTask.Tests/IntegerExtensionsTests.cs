@@ -43,8 +43,8 @@ namespace GcdTask.Tests
         [TestCase(int.MinValue, -12)]
         [TestCase(13, int.MinValue)]
         [TestCase(int.MinValue, int.MinValue)]
-        public void FinGcd_WithOneOrTwoMinIntegers_ThrowArgumentException(int a, int b) =>
-            Assert.Throws<ArgumentException>(() => FindGcd(a, b),
+        public void FinGcd_WithOneOrTwoMinIntegers_ThrowArgumentOutOfRangeException(int a, int b) =>
+            Assert.Throws<ArgumentOutOfRangeException>(() => FindGcd(a, b),
                 $"Number cannot be {int.MinValue}.");
     }
 }
