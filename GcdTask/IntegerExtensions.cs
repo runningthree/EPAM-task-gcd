@@ -13,7 +13,7 @@ namespace GcdTask
             /// <param name="b">Second integer.</param>
             /// <returns>The GCD value.</returns>
             /// <exception cref="ArgumentException">Thrown when all numbers are 0 at the same time.</exception>
-            /// <exception cref="ArgumentOutOfRangeException">Thrown when one or two numbers is int.MinValue.</exception>
+            /// <exception cref="ArgumentOutOfRangeException">Thrown when one or two numbers are int.MinValue.</exception>
             throw new NotImplementedException("You need to implement this function.");
         }
     }
