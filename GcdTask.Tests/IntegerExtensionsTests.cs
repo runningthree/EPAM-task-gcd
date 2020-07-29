@@ -2,10 +2,12 @@ using System;
 using NUnit.Framework;
 using static GcdTask.IntegerExtensions;
 
+#pragma warning disable CA1707
+
 namespace GcdTask.Tests
 {
     [TestFixture]
-    public class IntegerExtensionsTest
+    public class IntegerExtensionsTests
     {
         [TestCase(1, 1, ExpectedResult = 1)]
         [TestCase(8, 9, ExpectedResult = 1)]
@@ -35,8 +37,7 @@ namespace GcdTask.Tests
 
         [Test]
         public void FinGcd_WithTwoZeroNumbers_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => FindGcd(0, 0),
-                "Two numbers cannot be 0 at the same time.");
+            Assert.Throws<ArgumentException>(() => FindGcd(0, 0), "Two numbers cannot be 0 at the same time.");
 
         [TestCase(int.MinValue, 0)]
         [TestCase(0, int.MinValue)]
@@ -44,7 +45,6 @@ namespace GcdTask.Tests
         [TestCase(13, int.MinValue)]
         [TestCase(int.MinValue, int.MinValue)]
         public void FinGcd_WithOneOrTwoMinIntegers_ThrowArgumentOutOfRangeException(int a, int b) =>
-            Assert.Throws<ArgumentOutOfRangeException>(() => FindGcd(a, b),
-                $"Number cannot be {int.MinValue}.");
+            Assert.Throws<ArgumentOutOfRangeException>(() => FindGcd(a, b), $"Number cannot be {int.MinValue}.");
     }
 }
