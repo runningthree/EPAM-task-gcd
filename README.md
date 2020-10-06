@@ -1,5 +1,5 @@
 ## Task description ##
 
-Implement the algorithm for finding the [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor) of two integers. The integers can be large, so you need to find a clever solution.
+Implement a [FindGcd](GcdTask/IntegerExtensions.cs#L15) method to find the [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor) of two integers. _The task definition is given in the XML-comments for the method._
 
 *Topics - algorithms*.
